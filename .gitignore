@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Build output (keep dist for npm publish)
+# dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Test coverage
+coverage/
+dist/
+dogfood-artifacts/
+
+# OpenCode internal
+.omo/
+
+# pnpm (project uses npm; pnpm lockfile is local-only)
+pnpm-lock.yaml

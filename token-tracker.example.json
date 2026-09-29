@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "opencode-token-tracker-tui configuration file (OpenCode 2)",
+
+  "providers": {
+    "github-copilot": { "input": 0, "output": 0 },
+    "free-tier": { "input": 0, "output": 0 }
+  },
+
+  "models": {
+    "my-custom-model": { "input": 1, "output": 2, "cacheRead": 0.1 },
+    "deepseek/deepseek-v4-flash": {
+      "openrouter": { "input": 0.14, "output": 0.28, "cacheRead": 0.0028 },
+      "siliconflow": { "input": 0.2, "output": 0.4 }
+    }
+  },
+
+  "panel": {
+    "enabled": true,
+    "refreshSeconds": 5
+  }
+}
