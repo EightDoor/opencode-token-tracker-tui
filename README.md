@@ -26,10 +26,6 @@ plugin with a compact live summary in the TUI sidebar.
   cache-hit rate, and the top 5 models today by cost. It does NOT touch
   the right-side content pane — your session view stays put.
 
-> Looking for the previous CLI-based statistics? It has been removed in this
-> release. All visible insights now live in the TUI sidebar; you can read the
-> raw log directly if you need to dig deeper (see [Where the data lives](#where-the-data-lives)).
-
 ## Install
 
 The plugin package on npm is `opencode-token-tracker-tui`. OpenCode 2

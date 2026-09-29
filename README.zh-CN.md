@@ -4,19 +4,10 @@
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-> 维护者：[EightDoor](https://github.com/EightDoor)
-> 仓库：[EightDoor/opencode-token-tracker-tui](https://github.com/EightDoor/opencode-token-tracker-tui)
-> npm 包：[`opencode-token-tracker-tui`](https://www.npmjs.com/package/opencode-token-tracker-tui)
-> 许可证：MIT（见 [`LICENSE`](./LICENSE)）
->
-> 项目所有者：EightDoor。GitHub 仓库、npm 包、`LICENSE` 中的版权署名都归属同一所有人。
-
 ## 你能得到什么
 
 - **OpenCode 2 服务端插件**：监听 `session.step.ended`、`session.step.failed`、`session.status` 事件，将每个可计费的 step 写入本地 JSONL 日志（含 model、provider、tokens、cost、timestamp）。
 - **TUI sidebar 摘要**：`./tui` 子路径导出一个轻量 block，追加到 OpenCode 2 的 sidebar（`sidebar.content` slot）。内容包含 today/week/month 三行（tokens、cost、messages）、今日 cache 命中率、今日 cost 最高的 5 个模型。**不**会触碰右侧 content 面板 —— 你的会话视图保持不变。
-
-> 想要过去 CLI 提供的统计视图？本版本已移除。所有可见的洞察都集中在 TUI sidebar；如需深入分析，可直接读取本地 JSONL 日志（见 [数据保存位置](#数据保存位置)）。
 
 ## 安装
 
